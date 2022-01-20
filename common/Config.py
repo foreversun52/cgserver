@@ -18,7 +18,7 @@ class DevConfig(Config):
     ENV_NAME = "DEV"
     # 开发环境配置
     DEBUG = True
-    PORT = 80
+    PORT = 12233
 
     # 非关系型数据库的配置
     REDIS_HOST = "42.192.51.96"
