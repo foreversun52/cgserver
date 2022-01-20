@@ -14,6 +14,7 @@ class Config(object):
     WECHAT_APPID = "wx7cec9e4982f88258"  # 微信AppID
     WECHAT_APPSECRET = "a0e9130d14ca7615085190e6ff2393c7"
     WECHAT_TOKEN = "forever92"
+    WECHAT_EncodingAESKey = "D2MZu5o9dp4TaKL8sVdf3BjxyCTJNGzXOuPwWI8YFSr"
 
 class DevConfig(Config):
     ENV_NAME = "DEV"

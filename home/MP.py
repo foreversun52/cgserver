@@ -13,15 +13,9 @@ from common.Config import app_config
 
 
 @home.get('/mp/callback', tags=['微信公众号'], summary='消息回调和处理')
-async def mpcallback(req: Request, signature :str=Query(''), timestamp:str=Query(''), nonce:str=Query(''), echostr:str=Query('')):
+async def mpcallback(req: Request, signature:str=Query(''), timestamp:str=Query(''), nonce:str=Query(''), echostr:str=Query('')):
     try:
-        token = app_config.WECHAT_TOKEN
-        list = [token, timestamp, nonce]
-        list.sort()
-        sha1 = hashlib.sha1()
-        map(sha1.update, list)
-        hashcode = sha1.hexdigest()
-        if hashcode == signature:
+        if echostr:
             return echostr
         else:
             return ""
