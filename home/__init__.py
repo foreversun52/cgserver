@@ -10,3 +10,6 @@ from fastapi import APIRouter
 
 from model.CModel import *
 home = APIRouter()
+
+
+from . import MP

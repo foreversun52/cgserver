@@ -13,6 +13,7 @@ class Config(object):
     ALIYUNOSS_ENDPOINT = "oss-cn-hangzhou.aliyuncs.com"
     WECHAT_APPID = "wx7cec9e4982f88258"  # 微信AppID
     WECHAT_APPSECRET = "a0e9130d14ca7615085190e6ff2393c7"
+    WECHAT_TOKEN = "forever92"
 
 class DevConfig(Config):
     ENV_NAME = "DEV"
