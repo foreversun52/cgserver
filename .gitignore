@@ -1,0 +1,6 @@
+__pycache__
+.vscode
+*.pyc
+/adslot.csv
+/adslot.json
+/tmp
