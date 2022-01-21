@@ -54,4 +54,3 @@ async def mpcallback(req: Request):
             return HTMLResponse(content=XmlForm)
     except Exception as e:
         print(e)
-    return HTMLResponse(content="success")

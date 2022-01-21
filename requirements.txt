@@ -30,3 +30,4 @@ aiohttp
 oss2
 purl
 apscheduler
+xmltodict
