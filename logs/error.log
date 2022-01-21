@@ -1,0 +1,172 @@
+[2022-01-20 15:55:26 +0800] [22901] [INFO] Starting gunicorn 20.1.0
+[2022-01-20 15:55:26 +0800] [22901] [INFO] Listening at: http://0.0.0.0:12233 (22901)
+[2022-01-20 15:55:26 +0800] [22901] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-20 15:55:26 +0800] [22904] [INFO] Booting worker with pid: 22904
+[2022-01-20 15:55:26 +0800] [22904] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 146, in init_process
+    super().init_process()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data/pro/python/cgserver/main.py", line 16, in <module>
+    from fastapi import FastAPI, Depends, Header, HTTPException, Request,Query
+ModuleNotFoundError: No module named 'fastapi'
+[2022-01-20 15:55:26 +0800] [22904] [INFO] Worker exiting (pid: 22904)
+[2022-01-20 15:55:26 +0800] [22901] [INFO] Shutting down: Master
+[2022-01-20 15:55:26 +0800] [22901] [INFO] Reason: Worker failed to boot.
+[2022-01-20 15:55:27 +0800] [22922] [INFO] Starting gunicorn 20.1.0
+[2022-01-20 15:55:27 +0800] [22922] [INFO] Listening at: http://0.0.0.0:12233 (22922)
+[2022-01-20 15:55:27 +0800] [22922] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-20 15:55:27 +0800] [22925] [INFO] Booting worker with pid: 22925
+[2022-01-20 15:55:28 +0800] [22925] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 146, in init_process
+    super().init_process()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/data/pro/python/cgserver/0fb19f8cae3f6b10f15d9acc146a506b_venv/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data/pro/python/cgserver/main.py", line 16, in <module>
+    from fastapi import FastAPI, Depends, Header, HTTPException, Request,Query
+ModuleNotFoundError: No module named 'fastapi'
+[2022-01-20 15:55:28 +0800] [22925] [INFO] Worker exiting (pid: 22925)
+[2022-01-20 15:55:28 +0800] [22922] [INFO] Shutting down: Master
+[2022-01-20 15:55:28 +0800] [22922] [INFO] Reason: Worker failed to boot.
+[2022-01-20 17:05:32 +0800] [26923] [INFO] Starting gunicorn 20.1.0
+[2022-01-20 17:05:32 +0800] [26923] [INFO] Listening at: http://0.0.0.0:12233 (26923)
+[2022-01-20 17:05:32 +0800] [26923] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-20 17:05:32 +0800] [26926] [INFO] Booting worker with pid: 26926
+[2022-01-21 14:38:54 +0800] [4120] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:38:54 +0800] [4120] [INFO] Listening at: http://0.0.0.0:12233 (4120)
+[2022-01-21 14:38:54 +0800] [4120] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:38:54 +0800] [4123] [INFO] Booting worker with pid: 4123
+[2022-01-21 14:38:54 +0800] [4123] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 146, in init_process
+    super().init_process()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data/pro/python/cgserver/main.py", line 25, in <module>
+    from home import home
+  File "/data/pro/python/cgserver/home/__init__.py", line 15, in <module>
+    from . import MP
+  File "/data/pro/python/cgserver/home/MP.py", line 9, in <module>
+    import hashlib, time, xmltodict
+ModuleNotFoundError: No module named 'xmltodict'
+[2022-01-21 14:38:54 +0800] [4123] [INFO] Worker exiting (pid: 4123)
+[2022-01-21 14:38:54 +0800] [4120] [INFO] Shutting down: Master
+[2022-01-21 14:38:54 +0800] [4120] [INFO] Reason: Worker failed to boot.
+[2022-01-21 14:38:55 +0800] [4134] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:38:55 +0800] [4134] [INFO] Listening at: http://0.0.0.0:12233 (4134)
+[2022-01-21 14:38:55 +0800] [4134] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:38:55 +0800] [4142] [INFO] Booting worker with pid: 4142
+[2022-01-21 14:38:55 +0800] [4142] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 146, in init_process
+    super().init_process()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/data/pro/python/cgserver/bd35793008ae17e3eaabb54fad2e83f6_venv/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/data/pro/python/cgserver/main.py", line 25, in <module>
+    from home import home
+  File "/data/pro/python/cgserver/home/__init__.py", line 15, in <module>
+    from . import MP
+  File "/data/pro/python/cgserver/home/MP.py", line 9, in <module>
+    import hashlib, time, xmltodict
+ModuleNotFoundError: No module named 'xmltodict'
+[2022-01-21 14:38:55 +0800] [4142] [INFO] Worker exiting (pid: 4142)
+[2022-01-21 14:38:56 +0800] [4134] [INFO] Shutting down: Master
+[2022-01-21 14:38:56 +0800] [4134] [INFO] Reason: Worker failed to boot.
+[2022-01-21 14:40:04 +0800] [4571] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:40:04 +0800] [4571] [INFO] Listening at: http://0.0.0.0:12233 (4571)
+[2022-01-21 14:40:04 +0800] [4571] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:40:04 +0800] [4574] [INFO] Booting worker with pid: 4574
+[2022-01-21 14:41:07 +0800] [4948] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:41:07 +0800] [4948] [INFO] Listening at: http://0.0.0.0:12233 (4948)
+[2022-01-21 14:41:07 +0800] [4948] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:41:07 +0800] [4951] [INFO] Booting worker with pid: 4951
+[2022-01-21 14:43:27 +0800] [5711] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:43:27 +0800] [5711] [INFO] Listening at: http://0.0.0.0:12233 (5711)
+[2022-01-21 14:43:27 +0800] [5711] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:43:27 +0800] [5714] [INFO] Booting worker with pid: 5714
+[2022-01-21 14:44:59 +0800] [6145] [INFO] Starting gunicorn 20.1.0
+[2022-01-21 14:44:59 +0800] [6145] [INFO] Listening at: http://0.0.0.0:8081 (6145)
+[2022-01-21 14:44:59 +0800] [6145] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2022-01-21 14:44:59 +0800] [6148] [INFO] Booting worker with pid: 6148
